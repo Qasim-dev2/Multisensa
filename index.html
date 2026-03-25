@@ -18,14 +18,16 @@
         <div class="container">
             <div class="top-bar-content">
                 <div class="top-bar-left">
-                    <span><i class="fas fa-clock"></i> Mon - Sat: 3:00 PM - 7:00 PM</span>
                     <span><i class="fas fa-map-marker-alt"></i> 477 Nishtar Block, Allama Iqbal Town, Lahore</span>
                 </div>
+                <div class="top-bar-center">
+                    <span><i class="fas fa-clock"></i> Mon - Sat: 3:00 PM - 7:00 PM</span>
+                </div>
                 <div class="top-bar-right">
-                    <a href="https://wa.me/923147367769" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.facebook.com/share/1CVTMsboQV/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/multisensa_centre?igsh=MXZvY3J3Z3hzYzR4NQ%3D%3D&utm_source=qr" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/azhan-rizwan-799395362" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://wa.me/923147367769" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/1CVTMsboQV/?mibextid=wwXIfr" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/multisensa_centre?igsh=MXZvY3J3Z3hzYzR4NQ%3D%3D&utm_source=qr" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/azhan-rizwan-799395362" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
@@ -36,12 +38,14 @@
         <div class="container">
             <nav class="navbar">
                 <a href="#" class="logo">
-                    <span class="logo-text">Multisensa</span>
+                    <img src="https://i.ibb.co/MDWHnpT5/Multi-Sensa-Logo.jpg" alt="Multisensa Physiotherapy" class="logo-img">
                 </a>
                 <ul class="nav-menu" id="nav-menu">
                     <li><a href="#home" class="nav-link active">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#treatments" class="nav-link">Treatments</a></li>
                     <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#disorders" class="nav-link">Disorders</a></li>
                     <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -76,17 +80,22 @@
         </div>
     </section>
 
-    <!-- Common Problems Section -->
+    <!-- Common Problems Section (MOVED BEFORE TREATMENTS) -->
     <section class="problems" id="problems">
         <div class="container">
             <div class="problems-grid">
                 <div class="problems-images">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=300&fit=crop" alt="Physiotherapy Treatment">
-                    <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=400&h=300&fit=crop" alt="Patient Care">
+                    <div class="problem-image-main">
+                        <img src="https://images.pexels.com/photos/5473182/pexels-photo-5473182.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Physiotherapy Doctor Consultation">
+                    </div>
+                    <div class="problem-image-secondary">
+                        <img src="https://images.pexels.com/photos/7298876/pexels-photo-7298876.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Back Pain">
+                    </div>
                 </div>
                 <div class="problems-content">
                     <span class="section-tag">Common Problems We Treat</span>
                     <h2>Suffering From Any Of These?</h2>
+                    <p class="problems-subtitle">Get expert physiotherapy treatment for all types of pain and discomfort</p>
                     <div class="problems-list">
                         <div class="problem-item">
                             <i class="fas fa-check-circle"></i>
@@ -120,9 +129,148 @@
                             <i class="fas fa-check-circle"></i>
                             <span>Joint Pain</span>
                         </div>
+                        <div class="problem-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Sports Injuries</span>
+                        </div>
+                        <div class="problem-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Arthritis Pain</span>
+                        </div>
                     </div>
-                    <a href="https://wa.me/923147367769" class="btn btn-primary" target="_blank">
+                    <a href="https://wa.me/923147367769?text=Hello!%20I%20need%20a%20consultation%20for%20my%20pain%20condition." class="btn btn-whatsapp" target="_blank">
                         <i class="fab fa-whatsapp"></i> Get Free Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Treatments Section - New Design -->
+    <section class="treatments" id="treatments">
+        <div class="container">
+            <div class="section-header treatments-header">
+                <span class="section-tag">Our Treatments</span>
+                <h2>Specialized Treatment Programs</h2>
+                <p>Comprehensive care for various pain conditions with proven treatment methods</p>
+            </div>
+
+            <!-- Treatment Cards Grid -->
+            <div class="treatment-cards-container">
+                <a href="back-pain-treatment.html" class="treatment-card-new">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/4506109/pexels-photo-4506109.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Back Pain Treatment">
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Back Pain</h3>
+                    </div>
+                </a>
+
+                <a href="neck-pain-treatment.html" class="treatment-card-new">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/3760275/pexels-photo-3760275.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Neck Pain Treatment">
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Neck Pain</h3>
+                    </div>
+                </a>
+
+                <a href="sciatica-treatment.html" class="treatment-card-new">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/4506214/pexels-photo-4506214.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sciatica Treatment">
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Sciatica</h3>
+                    </div>
+                </a>
+
+                <a href="knee-pain-treatment.html" class="treatment-card-new">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/4506108/pexels-photo-4506108.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Knee Pain Therapy">
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Knee Pain</h3>
+                    </div>
+                </a>
+
+                <a href="shoulder-pain-treatment.html" class="treatment-card-new">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/4498155/pexels-photo-4498155.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Frozen Shoulder">
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Frozen Shoulder</h3>
+                    </div>
+                </a>
+
+                <a href="sports-injury-treatment.html" class="treatment-card-new">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/4498294/pexels-photo-4498294.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Sports Injury">
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Sports Injury</h3>
+                    </div>
+                </a>
+
+                <a href="#contact" class="treatment-card-new">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/5473177/pexels-photo-5473177.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Muscle Pain">
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Muscle Pain</h3>
+                    </div>
+                </a>
+
+                <a href="#contact" class="treatment-card-new">
+                    <div class="card-image">
+                        <img src="https://images.pexels.com/photos/4498606/pexels-photo-4498606.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Posture Correction">
+                        <div class="card-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                    <div class="card-title">
+                        <h3>Posture Correction</h3>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Consultation Banner -->
+            <div class="consultation-banner">
+                <div class="banner-content">
+                    <div class="banner-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <div class="banner-text">
+                        <h3>Consult Our Experts</h3>
+                        <p>Get professional advice from our experienced physiotherapists</p>
+                    </div>
+                </div>
+                <div class="banner-buttons">
+                    <a href="https://wa.me/923147367769?text=Hello!%20I%20need%20to%20consult%20with%20a%20physiotherapist." class="btn-whatsapp-icon" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#contact" class="btn-appointment">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
                     </a>
                 </div>
             </div>
@@ -133,91 +281,123 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Our Treatments</span>
-                <h2>Specialized Physiotherapy Services</h2>
-                <p>We offer a wide range of physiotherapy treatments tailored to your specific needs</p>
+                <span class="section-tag">Our Services</span>
+                <h2>Comprehensive Therapy Solutions</h2>
+                <p>We offer a complete range of therapeutic services to meet all your rehabilitation needs</p>
             </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=400&h=300&fit=crop" alt="Back Pain Treatment">
+            <div class="main-services-grid">
+                <div class="main-service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-walking"></i>
                     </div>
-                    <div class="service-content">
-                        <h3>Back Pain Treatment</h3>
-                        <p>Lumbar Relief</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <h3>Physical Therapy</h3>
+                    <p>Expert treatment for musculoskeletal and neurological conditions to restore movement and function</p>
+                    <a href="#contact" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="main-service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Occupational Therapy</h3>
+                    <p>Helping you regain independence in daily activities and improve quality of life</p>
+                    <a href="#contact" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="main-service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Speech Therapy</h3>
+                    <p>Specialized treatment for speech, language, and communication disorders</p>
+                    <a href="#contact" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="main-service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Behavioural Therapy</h3>
+                    <p>Evidence-based interventions for autism, ADHD, and developmental disorders</p>
+                    <a href="#contact" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disorders We Treat Section -->
+    <section class="disorders" id="disorders">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Treat</span>
+                <h2>Disorders We <span class="highlight">Specialize In</span></h2>
+                <p>Comprehensive treatment for a wide range of musculoskeletal, neurological, and speech disorders</p>
+            </div>
+
+            <div class="disorders-categories">
+                <!-- Musculoskeletal Disorders -->
+                <div class="disorder-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-bone"></i>
+                        </div>
+                        <h3>Musculoskeletal Disorders</h3>
+                    </div>
+                    <div class="disorder-list">
+                        <div class="disorder-item"><i class="fas fa-check"></i> Sciatica</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Frozen Shoulder</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Neck Pain</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Back Pain</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Strain & Sprain</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Foot Drop</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Rheumatoid Arthritis</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Tendonitis</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Osteoarthritis</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Cervical Spondylosis</div>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?w=400&h=300&fit=crop" alt="Neck Pain Treatment">
+
+                <!-- Neurological Disorders -->
+                <div class="disorder-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Neurological Disorders</h3>
                     </div>
-                    <div class="service-content">
-                        <h3>Neck Pain Treatment</h3>
-                        <p>Cervical Care</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Sciatica Treatment">
-                    </div>
-                    <div class="service-content">
-                        <h3>Sciatica Treatment</h3>
-                        <p>Nerve Ease</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="disorder-list">
+                        <div class="disorder-item"><i class="fas fa-check"></i> Stroke</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Parkinson Disease</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Multiple Sclerosis</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Spinal Cord Injury</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Cerebral Palsy</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Bell's Palsy</div>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1597764690523-15bea4c581c9?w=400&h=300&fit=crop" alt="Knee Pain Therapy">
+
+                <!-- Speech Therapy Disorders -->
+                <div class="disorder-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-comment-medical"></i>
+                        </div>
+                        <h3>Speech Therapy Disorders</h3>
                     </div>
-                    <div class="service-content">
-                        <h3>Knee Pain Therapy</h3>
-                        <p>Joint Support</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop" alt="Frozen Shoulder Treatment">
-                    </div>
-                    <div class="service-content">
-                        <h3>Frozen Shoulder</h3>
-                        <p>Rotator Health</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&h=300&fit=crop" alt="Sports Injury Rehabilitation">
-                    </div>
-                    <div class="service-content">
-                        <h3>Sports Injury Rehab</h3>
-                        <p>Athletic Recovery</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="disorder-list">
+                        <div class="disorder-item"><i class="fas fa-check"></i> Stuttering</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Apraxia</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Dysarthria</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Aphasia</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Autism Spectrum Disorder</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Cerebral Palsy (CP)</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Down Syndrome</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Vocal Cord Nodules</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Laryngitis</div>
+                        <div class="disorder-item"><i class="fas fa-check"></i> Speech Delays</div>
                     </div>
                 </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?w=400&h=300&fit=crop" alt="Muscle Pain Therapy">
-                    </div>
-                    <div class="service-content">
-                        <h3>Muscle Pain Therapy</h3>
-                        <p>Flexibility Focus</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-image">
-                        <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3?w=400&h=300&fit=crop" alt="Posture Correction">
-                    </div>
-                    <div class="service-content">
-                        <h3>Posture Correction</h3>
-                        <p>Alignment Correction</p>
-                        <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+            </div>
+
+            <div class="disorders-cta">
+                <p>Don't see your condition listed? We treat many more disorders.</p>
+                <a href="#contact" class="btn btn-primary">Consult Our Experts</a>
             </div>
         </div>
     </section>
@@ -276,70 +456,104 @@
         </div>
     </section>
 
-    <!-- Benefits Section -->
-    <section class="benefits" id="benefits">
-        <div class="container">
-            <div class="benefits-grid">
-                <div class="benefits-images">
-                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=500&fit=crop" alt="Physiotherapy Benefits">
-                    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=300&fit=crop" alt="Treatment Benefits">
-                </div>
-                <div class="benefits-content">
-                    <span class="section-tag">Benefits</span>
-                    <h2>How Physiotherapy Helps You</h2>
-                    <ul class="benefits-list">
-                        <li><i class="fas fa-check"></i> Reduce Pain Naturally</li>
-                        <li><i class="fas fa-check"></i> Improve Mobility & Flexibility</li>
-                        <li><i class="fas fa-check"></i> Faster Injury Recovery</li>
-                        <li><i class="fas fa-check"></i> Better Posture</li>
-                        <li><i class="fas fa-check"></i> Prevent Future Injuries</li>
-                        <li><i class="fas fa-check"></i> Improve Quality of Life</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Start Your Recovery</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Treatment Process Section -->
-    <section class="process" id="process">
+    <!-- Treatment Process Section - Visual Timeline -->
+    <section class="treatment-process" id="process">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Our Process</span>
-                <h2>How We Treat You</h2>
-                <p>Our systematic approach ensures the best possible outcome for your recovery</p>
+                <h2>How We <span class="highlight">Treat You</span></h2>
+                <p>Our systematic 6-step approach ensures the best possible outcome for your complete recovery</p>
             </div>
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">01</div>
-                    <h3>Patient Assessment</h3>
-                    <p>We thoroughly evaluate your condition, medical history, and lifestyle</p>
+
+            <div class="process-timeline">
+                <!-- Left Steps (1-3) -->
+                <div class="timeline-left">
+                    <div class="timeline-step" data-step="1">
+                        <div class="step-icon">
+                            <i class="fas fa-clipboard-check"></i>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-number">Step 01</span>
+                            <h3>Patient Assessment</h3>
+                            <p>We thoroughly evaluate your condition, medical history, symptoms, and lifestyle to understand your unique situation.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step" data-step="2">
+                        <div class="step-icon">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-number">Step 02</span>
+                            <h3>Pain Diagnosis</h3>
+                            <p>Pinpointing the exact source and cause of your discomfort using advanced diagnostic techniques and clinical testing.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step" data-step="3">
+                        <div class="step-icon">
+                            <i class="fas fa-file-medical"></i>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-number">Step 03</span>
+                            <h3>Personalized Therapy Plan</h3>
+                            <p>Creating a custom recovery roadmap tailored specifically to your health goals and treatment needs.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="process-step">
-                    <div class="step-number">02</div>
-                    <h3>Pain Diagnosis</h3>
-                    <p>Identifying the exact cause and source of your pain</p>
+
+                <!-- Center Image -->
+                <div class="timeline-center">
+                    <div class="center-image">
+                        <img src="https://images.pexels.com/photos/5473186/pexels-photo-5473186.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Treatment Process">
+                        <div class="center-badge">
+                            <span class="badge-icon"><i class="fas fa-heart-pulse"></i></span>
+                            <span class="badge-text">Your Recovery Journey</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="process-step">
-                    <div class="step-number">03</div>
-                    <h3>Personalized Plan</h3>
-                    <p>Creating a treatment plan tailored to your specific needs</p>
+
+                <!-- Right Steps (4-6) -->
+                <div class="timeline-right">
+                    <div class="timeline-step" data-step="4">
+                        <div class="step-icon">
+                            <i class="fas fa-hands"></i>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-number">Step 04</span>
+                            <h3>Targeted Treatment</h3>
+                            <p>Manual therapy, modern equipment, and corrective exercises applied directly to address your condition.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step" data-step="5">
+                        <div class="step-icon">
+                            <i class="fas fa-dumbbell"></i>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-number">Step 05</span>
+                            <h3>Recovery & Rehabilitation</h3>
+                            <p>Restoring your range of motion, building strength, and regaining confidence through guided exercises.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step" data-step="6">
+                        <div class="step-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="step-content">
+                            <span class="step-number">Step 06</span>
+                            <h3>Long-term Prevention</h3>
+                            <p>Posture correction, lifestyle guidance, and exercise routines to prevent pain recurrence.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="process-step">
-                    <div class="step-number">04</div>
-                    <h3>Targeted Treatment</h3>
-                    <p>Applying effective therapy techniques to address your condition</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">05</div>
-                    <h3>Recovery & Rehab</h3>
-                    <p>Guided exercises and therapy for complete recovery</p>
-                </div>
-                <div class="process-step">
-                    <div class="step-number">06</div>
-                    <h3>Prevention</h3>
-                    <p>Tips and exercises to prevent recurrence of pain</p>
-                </div>
+            </div>
+
+            <div class="process-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-calendar-check"></i> Start Your Recovery Journey
+                </a>
             </div>
         </div>
     </section>
@@ -591,14 +805,42 @@
                                 <input type="tel" id="phone" name="phone" placeholder="Phone Number*" required>
                                 <select id="service" name="service" required>
                                     <option value="">Type Of Service Enquired*</option>
-                                    <option value="back-pain">Back Pain Treatment</option>
-                                    <option value="neck-pain">Neck Pain Treatment</option>
-                                    <option value="sciatica">Sciatica Treatment</option>
-                                    <option value="knee-pain">Knee Pain Therapy</option>
-                                    <option value="shoulder">Frozen Shoulder</option>
-                                    <option value="sports">Sports Injury Rehab</option>
-                                    <option value="muscle">Muscle Pain Therapy</option>
-                                    <option value="posture">Posture Correction</option>
+                                    <optgroup label="Main Services">
+                                        <option value="physical-therapy">Physical Therapy</option>
+                                        <option value="occupational-therapy">Occupational Therapy</option>
+                                        <option value="speech-therapy">Speech Therapy</option>
+                                        <option value="behavioural-therapy">Behavioural Therapy</option>
+                                    </optgroup>
+                                    <optgroup label="Musculoskeletal Disorders">
+                                        <option value="sciatica">Sciatica</option>
+                                        <option value="frozen-shoulder">Frozen Shoulder</option>
+                                        <option value="neck-pain">Neck Pain</option>
+                                        <option value="back-pain">Back Pain</option>
+                                        <option value="strain-sprain">Strain & Sprain</option>
+                                        <option value="foot-drop">Foot Drop</option>
+                                        <option value="rheumatoid-arthritis">Rheumatoid Arthritis</option>
+                                        <option value="tendonitis">Tendonitis</option>
+                                        <option value="osteoarthritis">Osteoarthritis</option>
+                                        <option value="cervical-spondylosis">Cervical Spondylosis</option>
+                                    </optgroup>
+                                    <optgroup label="Neurological Disorders">
+                                        <option value="stroke">Stroke</option>
+                                        <option value="parkinson">Parkinson Disease</option>
+                                        <option value="multiple-sclerosis">Multiple Sclerosis</option>
+                                        <option value="spinal-cord-injury">Spinal Cord Injury</option>
+                                        <option value="cerebral-palsy">Cerebral Palsy</option>
+                                        <option value="bells-palsy">Bell's Palsy</option>
+                                    </optgroup>
+                                    <optgroup label="Speech Disorders">
+                                        <option value="stuttering">Stuttering</option>
+                                        <option value="apraxia">Apraxia</option>
+                                        <option value="dysarthria">Dysarthria</option>
+                                        <option value="aphasia">Aphasia</option>
+                                        <option value="autism">Autism Spectrum Disorder</option>
+                                        <option value="down-syndrome">Down Syndrome</option>
+                                        <option value="vocal-cord-nodules">Vocal Cord Nodules</option>
+                                        <option value="laryngitis">Laryngitis</option>
+                                    </optgroup>
                                     <option value="others">Others</option>
                                 </select>
                             </div>
@@ -645,7 +887,9 @@
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
+                        <li><a href="#treatments">Treatments</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="#disorders">Disorders</a></li>
                         <li><a href="#testimonials">Testimonials</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -653,11 +897,11 @@
                 <div class="footer-col">
                     <h4>Our Services</h4>
                     <ul>
-                        <li><a href="#services">Back Pain Treatment</a></li>
-                        <li><a href="#services">Neck Pain Treatment</a></li>
-                        <li><a href="#services">Sciatica Treatment</a></li>
-                        <li><a href="#services">Sports Injury Rehab</a></li>
-                        <li><a href="#services">Posture Correction</a></li>
+                        <li><a href="#services">Physical Therapy</a></li>
+                        <li><a href="#services">Occupational Therapy</a></li>
+                        <li><a href="#services">Speech Therapy</a></li>
+                        <li><a href="#services">Behavioural Therapy</a></li>
+                        <li><a href="#disorders">View All Disorders</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
@@ -674,6 +918,15 @@
             </div>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/923147367769?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment."
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       title="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>

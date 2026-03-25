@@ -20,6 +20,61 @@ if (hamburger && navMenu) {
 }
 
 // ========================================
+// Treatment Process Timeline Animation
+// ========================================
+const timelineSteps = document.querySelectorAll('.timeline-step');
+if (timelineSteps.length > 0) {
+    const timelineObserverOptions = {
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const timelineObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                // Add staggered animation delay
+                const stepIndex = Array.from(timelineSteps).indexOf(entry.target);
+                setTimeout(() => {
+                    entry.target.classList.add('animate');
+                }, stepIndex * 150); // 150ms delay between each step
+                timelineObserver.unobserve(entry.target);
+            }
+        });
+    }, timelineObserverOptions);
+
+    timelineSteps.forEach(step => {
+        timelineObserver.observe(step);
+    });
+}
+
+// ========================================
+// Treatment Cards Animation on Scroll
+// ========================================
+const treatmentCards = document.querySelectorAll('.treatment-card-new');
+if (treatmentCards.length > 0) {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const cardObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, observerOptions);
+
+    treatmentCards.forEach(card => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        card.style.transition = 'all 0.6s ease';
+        cardObserver.observe(card);
+    });
+}
+
+// ========================================
 // Sticky Header with Background Change
 // ========================================
 const header = document.getElementById('header');
@@ -81,10 +136,9 @@ window.addEventListener('scroll', highlightNavLink);
 // ========================================
 // EmailJS Configuration
 // ========================================
-// TODO: Replace these with your EmailJS credentials
-const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';  // Your EmailJS public key
-const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';  // Your service ID
-const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';  // Your template ID
+const EMAILJS_PUBLIC_KEY = 'f9ErDzMnEKAjRsejA';  // Your EmailJS public key
+const EMAILJS_SERVICE_ID = 'service_9973npq';  // Your service ID
+const EMAILJS_TEMPLATE_ID = 'template_jqdih42';  // Your template ID
 
 // Initialize EmailJS
 (function() {
@@ -207,7 +261,7 @@ function showNotification(title, message, type = 'success') {
 // Scroll Reveal Animation
 // ========================================
 function revealOnScroll() {
-    const elements = document.querySelectorAll('.service-card, .feature-card, .testimonial-card, .pricing-card, .process-step');
+    const elements = document.querySelectorAll('.service-card, .feature-card, .testimonial-card, .pricing-card');
 
     elements.forEach(element => {
         const elementTop = element.getBoundingClientRect().top;
@@ -222,7 +276,7 @@ function revealOnScroll() {
 
 // Initialize elements with initial styles for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.service-card, .feature-card, .testimonial-card, .pricing-card, .process-step');
+    const animatedElements = document.querySelectorAll('.service-card, .feature-card, .testimonial-card, .pricing-card');
 
     animatedElements.forEach(element => {
         element.style.opacity = '0';
@@ -341,5 +395,87 @@ document.querySelectorAll('form').forEach(form => {
         }
     });
 });
+
+// ========================================
+// FAQ Functionality for Treatment Pages
+// ========================================
+document.addEventListener('DOMContentLoaded', function() {
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+
+        question.addEventListener('click', () => {
+            // Close all other FAQ items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                }
+            });
+
+            // Toggle current item
+            item.classList.toggle('active');
+        });
+    });
+});
+
+// ========================================
+// Quick Form Submission for Treatment Pages
+// ========================================
+const quickForm = document.getElementById('quick-form');
+if (quickForm) {
+    quickForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const submitBtn = this.querySelector('button[type="submit"]');
+        const originalBtnContent = submitBtn.innerHTML;
+
+        // Disable button and show loading state
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+        // Get form data
+        const formData = new FormData(this);
+        const templateParams = {
+            from_name: formData.get('name'),
+            from_email: formData.get('email'),
+            from_phone: formData.get('phone'),
+            service_type: formData.get('service'),
+            message: formData.get('message') || 'Quick appointment request from treatment page',
+            to_email: 'info@multisensa.com'
+        };
+
+        try {
+            const response = await emailjs.send(
+                EMAILJS_SERVICE_ID,
+                EMAILJS_TEMPLATE_ID,
+                templateParams
+            );
+
+            console.log('Quick form submitted successfully:', response);
+
+            showNotification(
+                'Request Sent!',
+                'Your appointment request has been sent successfully. We will contact you shortly.',
+                'success'
+            );
+
+            // Reset form
+            this.reset();
+
+        } catch (error) {
+            console.error('Error sending quick form:', error);
+            showNotification(
+                'Error',
+                'Failed to send request. Please try calling us at 0314 7367769.',
+                'error'
+            );
+        } finally {
+            // Re-enable button
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = originalBtnContent;
+        }
+    });
+}
 
 console.log('Multisensa Physiotherapy Website Loaded Successfully!');
